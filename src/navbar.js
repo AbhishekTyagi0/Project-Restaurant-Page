@@ -8,9 +8,10 @@ export function navigationBar() {
   const nav = document.querySelector(".nav");
   const navList = [{ text: "Home" }, { text: "Menu" }, { text: "Contact" }];
 
-  navList.forEach((link) => {
+  navList.forEach((link, index) => {
     const navItem = document.createElement("button");
     navItem.classList.add("navButton");
+    navItem.id = index;
     navItem.textContent = link.text;
     nav.appendChild(navItem);
   });

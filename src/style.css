@@ -7,13 +7,13 @@
 body {
   background: url(../assets/bgImg.jpg) center;
   background-size: cover;
-  height: 900px;
+  width: 100vw;
 }
+
 
 .nav {
   width: 100vw;
   height: 7em;
-  /* background-color: #eee; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,6 @@ body {
 }
 
 .initialPageDiv {
-  /* border: 2px solid white; */
   display: flex;
   flex-direction: column;
   max-width: 40vw;
@@ -52,10 +51,115 @@ body {
   gap: 3rem;
 }
 
-.name{
-    
-    border-bottom: 1px solid grey;
+.name {
+  border-bottom: 1px solid grey;
 }
 .name-para {
   font-size: 20px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardDiv {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  height: 22em;
+  gap: 1em;
+  background-color: grey;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.card > img {
+  width: 250px;
+  height: 200px;
+}
+
+.card > h3 {
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.card > p {
+  font-size: 1.3em;
+}
+
+
+.contact{
+
+  width: 100vw;
+  height: auto;
+  background-color: #111827;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4em;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+}
+
+.contactHeading{
+  
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  
+}
+
+.outlet{
+  
+  background-color: gray;
+  width: 30vw;
+  height: 13em;
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  border-radius: 2em;
+  
+}
+
+.outlet>h2{
+  
+  font-size: 2.5em;
+  border-bottom: 1px solid #111827;
+  width: 100%;
+  color: rgb(39, 39, 153);
+}
+
+.outlet>p{
+
+  font-size: 1.5em;
+}
+
+
+.footer{
+
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  padding: .7em;
+  font-weight: bolder;
+}
+
+.hidden{
+  display: none;
 }
